@@ -40,6 +40,8 @@ public class Updater extends AnimationTimer{
 			for(int i = 0;i<Game.getGame().snake.segments.size();i++) {
 				//System.out.println("drawing segment "+i);
 				g.fillRect(Game.getGame().snake.segments.get(i).x*Game.getGame().cellWidth,Game.getGame().snake.segments.get(i).y*Game.getGame().cellHeight,Game.getGame().cellWidth,Game.getGame().cellHeight);
+				g.strokeRect(Game.getGame().snake.segments.get(i).x*Game.getGame().cellWidth,Game.getGame().snake.segments.get(i).y*Game.getGame().cellHeight,Game.getGame().cellWidth,Game.getGame().cellHeight);
+				
 			}
 			
 			
